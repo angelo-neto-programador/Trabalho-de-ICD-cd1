@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 
-df = pd.read_csv('dados.csv')
+df = pd.read_csv('tabela_de_precos/dados.csv')
 
 df['Preço original'] = df['Preço original'].str.replace(',','.')
 df['Preço original'] = df['Preço original'].str.replace('R$', '').astype(float)
